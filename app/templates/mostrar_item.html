@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{ lista.capitalize() }}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock head %}
+{% block content %}
+<h1>{{ lista.capitalize() }}</h1>
+<p>{{ item }}</p>
+{% endblock content %}

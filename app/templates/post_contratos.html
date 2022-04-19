@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Post {{ lista.capitalize() }}{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock head %}
+{% block content %}
+<form method="POST" action="/contratos">
+  {{ form.csrf_token }}
+    <p>
+        {{ form.aluguel.label }}
+        {{ form.aluguel }}
+    </p>
+
+    {% if form.aluguel.errors %}
+        <ul class="errors">
+            {% for error in form.aluguel.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <p>
+        {{ form.inquilino.label }}
+        {{ form.inquilino }}
+    </p>
+
+    {% if form.inquilino.errors %}
+        <ul class="errors">
+            {% for error in form.inquilino.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <input type="submit" value="Submit">
+</form>
+	
+{% endblock content %}

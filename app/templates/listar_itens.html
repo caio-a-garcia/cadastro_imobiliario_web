@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ lista.capitalize() }}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock head %}
+{% block content %}
+<h1>{{ lista.capitalize() }}</h1>
+  <p>Total: {{ itens['total'] }}</p>
+  <ul>
+  {% for item in itens[lista] %}
+    <li>{{ item }}</li>
+  {% endfor %}
+  </ul>
+{% endblock content %}

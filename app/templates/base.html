@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <!--<meta charset="ISO-8859-1">-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    {% block head %}
+    <title>{% block title %}{% endblock %} - Cadastro Imobiliario</title>
+    {% endblock %}
+</head>
+  <body>
+    <nav>
+        <a href="{{ url_for('main.handle_index') }}">Cadastro Imobiliario</a>
+    </nav>
+    <hr>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Post {{ lista.capitalize() }}{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock head %}
+{% block content %}
+<form method="POST" action="/imoveis">
+  {{ form.csrf_token }}
+        <p>
+            {{ form.logradouro.label }}
+            {{ form.logradouro }}
+        </p>
+
+	{% if form.logradouro.errors %}
+            <ul class="errors">
+                {% for error in form.logradouro.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+	<p>
+            {{ form.cep.label }}
+            {{ form.cep }}
+        </p>
+
+	{% if form.cep.errors %}
+            <ul class="errors">
+                {% for error in form.cep.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+	<p>
+            {{ form.bairro.label }}
+            {{ form.bairro }}
+        </p>
+
+	{% if form.bairro.errors %}
+            <ul class="errors">
+                {% for error in form.bairro.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+	<p>
+            {{ form.cidade.label }}
+            {{ form.cidade }}
+        </p>
+
+	{% if form.cidade.errors %}
+            <ul class="errors">
+                {% for error in form.cidade.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+  <input type="submit" value="Submit">
+</form>
+	
+{% endblock content %}
