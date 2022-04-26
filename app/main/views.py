@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, abort
+from flask import Flask, request, render_template, abort, url_for
 from . import main
 from .. import db
 from ..models import Imovel, Inquilino, Proprietario, Aluguel, Contrato
