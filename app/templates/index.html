@@ -5,11 +5,12 @@
 {% endblock head %}
 {% block content %}
 <h1>Cadastro Imobiliario</h1>
+<h2>Listar Itens</h2>
 <ul>
-  <li><a href="">Imoveis</a></li>
-  <li><a href="">Inquilinos</a></li>
-  <li><a href="">Proprietarios</a></li>
-  <li><a href="">Alugueis</a></li>
-  <li><a href="">Contratos</a></li>
+  <li><a href="{{ url_for('main.handle_listar_itens', lista='imoveis') }}">Imoveis</a></li>
+  <li><a href="{{ url_for('main.handle_listar_itens', lista='inquilinos') }}">Inquilinos</a></li>
+  <li><a href="{{ url_for('main.handle_listar_itens', lista='proprietarios') }}">Proprietarios</a></li>
+  <li><a href="{{ url_for('main.handle_listar_itens', lista='alugueis') }}">Alugueis</a></li>
+  <li><a href="{{ url_for('main.handle_listar_itens', lista='contratos') }}">Contratos</a></li>
 </ul>
 {% endblock content %}

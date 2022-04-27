@@ -3,7 +3,6 @@ from . import main
 from .. import db
 from ..models import Imovel, Inquilino, Proprietario, Aluguel, Contrato
 from .forms import FormImoveis, FormProprietarios, FormInquilinos, FormAlugueis, FormContratos
-# TODO: implement swagger with flask_restx
 
 #########
 # Front #
@@ -61,18 +60,6 @@ def handle_post_item(lista):
     }
     form = forms[lista]()
     return render_template(templates[lista], lista = lista, form = form)
-# TODO: implement auto-incrementing id
-
-# TODO: remove for prod
-# @main.route('/test', methods=['GET'])
-# def test_function():
-#     form = FormImoveis()
-#     members = inspect.getmembers(form)
-#     resultado = []
-#     for member in members:
-#         if not inspect.ismethod(member):
-#             resultado.append(member)
-#     return str(resultado)
 
 
 #######            
@@ -83,7 +70,7 @@ def handle_imoveis():
     if request.method == 'POST':
         if request.is_json:
             data = request.get_json()
-            new_imovel = Imovel(#id = data['id'],
+            new_imovel = Imovel(id = data['id'],
                                 logradouro = data['logradouro'],
                                 cep = data['cep'],
                                 bairro = data['bairro'],
