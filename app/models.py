@@ -9,12 +9,12 @@ class Imovel(db.Model):
     bairro = db.Column(db.String())
     cidade = db.Column(db.String())
 
-    # def __init__(self, id, logradouro, cep, bairro, cidade):
-    #     self.id = id
-    #     self.logradouro = logradouro
-    #     self.cep = cep
-    #     self.bairro = bairro
-    #     self.cidade = cidade
+    def __init__(self, id, logradouro, cep, bairro, cidade):
+        self.id = id
+        self.logradouro = logradouro
+        self.cep = cep
+        self.bairro = bairro
+        self.cidade = cidade
 
     def __repr__(self):
         return f"<Imovel {self.logradouro}, {self.cidade}.>"

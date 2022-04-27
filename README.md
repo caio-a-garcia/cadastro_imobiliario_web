@@ -4,6 +4,8 @@ Sistema de cadastro imobiliário implementado com interface web em Flask e persis
 
 ## Setup do Projeto
 
+### Ambiente
+
 No Windows: com a linha de comando cmd aberta na pasta do projeto
 1) `python -m venv <ambiente_virtual>`
 2) `<ambiente_virtual>\Scripts\activate`
@@ -28,6 +30,8 @@ Observações: "postgres" e "5432" são o usuário e porta padrões do Postgres. "loc
 
 O comando 5 configura uma segunda variável de ambiente que é usada pelo Flask como parte de um sistema de segurança no processo de envio de formulários. Quando usado em produção, o valor dessa variável deve ser secreto e preferencialmente difícil de ser adivinhado.
 
+
+### Banco de Dados
 
 Para inicializar o banco de dados Postgresql com o PgAdmin aberto:
 6) Crie um novo banco de dados:

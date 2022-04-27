@@ -3,13 +3,10 @@ from . import main, api
 from .. import db
 from .forms import FormImoveis, FormProprietarios, FormInquilinos, FormAlugueis, FormContratos
 
-#########
-# Front #
-######### -request, ..models
+
 @main.route('/', methods=['GET'])
 def handle_index():
     return render_template('index.html')
-
 
 @main.route('/listar/<lista>', methods=['GET'])
 def handle_listar_itens(lista):
@@ -59,8 +56,3 @@ def handle_post_item(lista):
     }
     form = forms[lista]()
     return render_template(templates[lista], lista = lista, form = form)
-
-
-#######            
-# API #
-####### -abort, render_template, forms
