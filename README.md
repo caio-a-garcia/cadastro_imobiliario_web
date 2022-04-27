@@ -57,7 +57,7 @@ No banco de teste, rode o arquivo `cadastro_imobiliario_web/diagramas_bd/banco_t
 
 Rode o projeto (comando 8) se não estiver já em execução.
 
-No Postman acesse um Workspace, clique em 'import', selecione o arquivo `cadastro_imobiliario_web/diagramas_bd/CadastroImoveis.postman_collection.json', e clique em `Import`.
+No Postman acesse um Workspace, clique em 'import', selecione o arquivo `cadastro_imobiliario_web/tests/CadastroImoveis.postman_collection.json', e clique em `Import`.
 Uma vez que esse arquivo for importado, ele estará disponível no Postman para teste futuros. Para atualizar o arquivo, abra o menu de contexto (os três pontos que aparecem ao colocar o mouse sobre CadastroImoveis) e selecione export.
 
 Com o projeto rodando, selecione `Run collection` no menu de contexto de CadastroImoveis, e clique em `Run CadastroImoveis`.

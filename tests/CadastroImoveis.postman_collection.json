@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "24fbcc5d-737b-407c-8e2c-19cb23bcaae4",
 		"name": "CadastroImoveis",
+		"description": "Essa coleção de requests foi feita para testar as APIs do projeto cadastro_imobiliario_web em Flask. Os testes partem de suposições a respeito do estado do banco de dados que serão satisfeitas ao rodar o script em cadastro_imobiliario_web/diagramas_bd/banco_teste.sql. **Esse script apaga as entradas do banco e foi feito para ser rodado em um banco de testes.** Informações adicionais no README.md do projeto.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -589,7 +590,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/inquilinos/2",
+							"raw": "http://127.0.0.1:5000/inquilinos/3",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -600,7 +601,7 @@
 							"port": "5000",
 							"path": [
 								"inquilinos",
-								"2"
+								"3"
 							]
 						}
 					},
