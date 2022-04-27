@@ -56,12 +56,12 @@ Com o projeto rodando, pagina inicial pode ser encontrada no seu browser no ende
 Para criar uma tabela para o teste, repita os passos 6 e 7, e o passo 4 com o nome do correto para os testes. Por exemplo:
 `postgresql://postgres:root@localhost:5432/teste`
 
-**Esse é o passo que apaga as entradas do banco**
+**Esse é o passo que apaga as entradas do banco:**
 No banco de teste, rode o arquivo `cadastro_imobiliario_web/diagramas_bd/banco_teste.sql` com o Query tool.
 
 Rode o projeto (comando 8) se não estiver já em execução.
 
-No Postman acesse um Workspace, clique em 'import', selecione o arquivo `cadastro_imobiliario_web/tests/CadastroImoveis.postman_collection.json', e clique em `Import`.
+No Postman acesse um Workspace, clique em 'import', selecione o arquivo `cadastro_imobiliario_web/tests/CadastroImoveis.postman_collection.json`, e clique em `Import`.
 Uma vez que esse arquivo for importado, ele estará disponível no Postman para teste futuros. Para atualizar o arquivo, abra o menu de contexto (os três pontos que aparecem ao colocar o mouse sobre CadastroImoveis) e selecione export.
 
 Com o projeto rodando, selecione `Run collection` no menu de contexto de CadastroImoveis, e clique em `Run CadastroImoveis`.
